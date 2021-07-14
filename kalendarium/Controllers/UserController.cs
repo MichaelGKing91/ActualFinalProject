@@ -19,7 +19,7 @@ namespace kalendarium.Controllers
             return true;
         }
 
-        [HttpGet("isuser")]
+        [HttpPost("isuser")]
         public bool isUser(string fName, string lName, string eAddress, string dPart, string pWord)
         {
             User usr = new User() { firstName = fName, lastName = lName, emailAddress = eAddress, department = dPart, password = pWord };

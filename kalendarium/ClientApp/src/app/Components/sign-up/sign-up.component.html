@@ -3,7 +3,7 @@
 <form class="example-form">
   <mat-form-field class="example-full-width" appearance="fill">
     <mat-label>Department</mat-label>
-    <input matInput value="">
+    <input matInput [(ngModel)]="dept" name="dept"/>
   </mat-form-field>
 
   <table class="example-full-width" cellspacing="0">
@@ -11,19 +11,19 @@
       <td>
         <mat-form-field class="example-full-width" appearance="fill">
           <mat-label>First name</mat-label>
-          <input matInput>
+          <input matInput [(ngModel)]="firstname" name="firstname"/>
         </mat-form-field>
       </td>
       <td>
         <mat-form-field class="example-full-width" appearance="fill">
           <mat-label>Last Name</mat-label>
-          <input matInput>
+          <input matInput [(ngModel)]="lastname" name="lastname"/>
         </mat-form-field>
       </td>
     </tr>
   </table>
 
-  <table class="example-full-width" cellspacing="0">
+  <!--<table class="example-full-width" cellspacing="0">
     <tr>
 
       <td>
@@ -39,16 +39,16 @@
         </mat-form-field>
       </td>
     </tr>
-  </table>
+  </table>-->
 
   <p>
     <mat-form-field class="example-full-width" appearance="fill">
       <mat-label>Email Address</mat-label>
-      <input matInput />
+      <input matInput [(ngModel)]="emailaddress" name="emailaddress" />
     </mat-form-field>
     <mat-form-field class="example-full-width" appearance="fill">
       <mat-label>Password</mat-label>
-      <input matInput />
+      <input matInput [(ngModel)]="password" name="password" />
     </mat-form-field>
   </p>
 

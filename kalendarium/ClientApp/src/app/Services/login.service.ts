@@ -5,6 +5,7 @@ import { User } from 'oidc-client';
 @Injectable()
 export class LoginService {
   http: HttpClient = null;
+  username: string = '';
 
   constructor(theHttp: HttpClient) {
     this.http = theHttp;
